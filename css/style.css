@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: rgb(255, 166, 0);
+    font-family: 'Poppins', sans-serif !important;
+}
+
+header {
+    height: 100vh;
+
+    .topHeader {
+        display: flex;
+        color: white;
+        align-items: center;
+        padding: 30px 10px 10px;
+
+        .logo {
+            text-align: center;
+
+            & a {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+
+        & nav {
+            & ul {
+                display: flex;
+                gap: 50px;
+                align-items: center;
+
+                & li:first-child {
+                    background-color: #000000ce;
+                    padding: 8px 15px;
+                    border-radius: 20px;
+
+                }
+
+                & li:hover,
+                & li:active {
+                    background-color: #000000ce;
+                    padding: 8px 15px;
+                    border-radius: 20px;
+                }
+
+                & li a {
+                    text-decoration: none;
+                    color: inherit;
+                }
+            }
+
+
+        }
+    }
+
+    .heroSection {
+        .profilePic {
+            padding: 10px;
+
+            & img {
+                width: 100%;
+                border-radius: 50%;
+                object-fit: cover;
+                box-shadow: 0px 6px 4px -1px rgb(24 22 22 / 53%);
+            }
+        }
+
+        .profileWrap {
+            .profileDetail {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .icon {
+                margin-top: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                font-size: 20px;
+
+                & a {
+                    text-decoration: none;
+                    color: inherit;
+                }
+            }
+
+            & button {
+                padding: 8px 14px;
+                border-radius: 20px;
+                font-size: 15px;
+                border: none;
+                min-width: 160px;
+                box-shadow: 0px 4px 0px 0px rgb(0 0 0 / 93%);
+            }
+        }
+
+    }
+}
